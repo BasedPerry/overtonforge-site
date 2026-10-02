@@ -1,0 +1,72 @@
+/* ============================================================
+   Cool / Streaming-Era palette — RESERVED FOR RECAPTR
+
+   This was the original Overton Forge site palette: graphite +
+   signal-green + vaporwave-violet + restore-blue + mac-beige.
+   It signals server room / Twitch-Mixer streaming era / Apple
+   chrome — which fits Recaptr's audience and product surface
+   far better than it fits Overton Forge's heritage logo.
+
+   Preserved verbatim here so it can be lifted into Recaptr's
+   own site when that brand goes public. Do not load this file
+   on the OvertonForge.github.io live site — `styles.css` is
+   the warm heritage version.
+   ============================================================ */
+
+:root {
+  /* Brand palette — from cool/streaming brief */
+  --of-graphite:  #1B1F23;          /* primary background */
+  --of-graphite-2: #242A30;         /* surface */
+  --of-graphite-3: #2C333B;         /* elevated surface */
+  --of-signal:    #8DFCB7;          /* CRT green / signal */
+  --of-violet:    #A179F2;          /* atmosphere */
+  --of-restore:   #5EB2D6;          /* action / CTA */
+  --of-beige:     #CFCAC2;          /* warm text */
+  --of-beige-bright: #F4F0E8;       /* high-contrast text */
+
+  /* Functional */
+  --color-bg:        var(--of-graphite);
+  --color-surface:   var(--of-graphite-2);
+  --color-surface-2: var(--of-graphite-3);
+  --color-text:      var(--of-beige);
+  --color-text-bright: var(--of-beige-bright);
+  --color-text-muted: rgba(207, 202, 194, 0.62);
+  --color-text-dim:   rgba(207, 202, 194, 0.38);
+
+  --color-border:        rgba(207, 202, 194, 0.10);
+  --color-border-strong: rgba(207, 202, 194, 0.20);
+  --color-border-signal: rgba(141, 252, 183, 0.35);
+
+  --tint-restore:   var(--of-restore);
+  --tint-signal:    var(--of-signal);
+  --tint-violet:    var(--of-violet);
+
+  --gradient-signal: linear-gradient(
+    135deg,
+    var(--of-restore) 0%,
+    var(--of-violet) 52%,
+    var(--of-signal) 100%
+  );
+  --gradient-hero-glow: radial-gradient(
+    ellipse 80% 60% at 50% 0%,
+    rgba(94, 178, 214, 0.18) 0%,
+    rgba(161, 121, 242, 0.10) 35%,
+    transparent 70%
+  );
+
+  /* Typography (cool palette pairs with Space Grotesk + Inter + IBM Plex Mono) */
+  --font-heading: "Space Grotesk", "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+}
+
+/*
+   The remainder of the cool-palette stylesheet (component rules,
+   layout, responsive, accessibility) is identical to the warm
+   version in styles.css aside from the token references above.
+
+   When Recaptr's site is built, copy styles.css from this repo
+   as the starting point and replace the :root token block at the
+   top with the cool tokens above. All component rules will pick
+   up the new colors automatically.
+*/
