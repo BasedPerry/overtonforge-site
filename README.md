@@ -7,7 +7,7 @@ The Overton Forge website: plain HTML and CSS, no build step, served by GitHub P
 - `index.html`: homepage (masthead, hero, project covers, contact ledger, colophon footer)
 - `styles.css`: design tokens and components; Overton Forge colors live under `:root`
 - `styles.recaptr-palette.css`: archived cool palette (reference only, not loaded)
-- `recaptr/`: Recaptr landing, support, and privacy pages (the App Store Support and Privacy URLs point here)
+- `recaptr/`: Recaptr landing, support, and privacy pages (the App Store Support and Privacy URLs point here). Recaptr has its own identity in `recaptr/recaptr.css`, separate from Overton Forge.
 - `CNAME`: custom domain for GitHub Pages
 
 ## Brand covers
