@@ -4,11 +4,15 @@ The Overton Forge website: plain HTML and CSS, no build step, served by GitHub P
 
 ## Files
 
-- `index.html`: homepage (hero, project cards, contact)
-- `styles.css`: design tokens and components; colors live under `:root`
-- `styles.recaptr-palette.css`: Recaptr card accent
+- `index.html`: homepage (masthead, hero, project covers, contact ledger, colophon footer)
+- `styles.css`: design tokens and components; Overton Forge colors live under `:root`
+- `styles.recaptr-palette.css`: archived cool palette (reference only, not loaded)
 - `recaptr/`: Recaptr landing, support, and privacy pages (the App Store Support and Privacy URLs point here)
 - `CNAME`: custom domain for GitHub Pages
+
+## Brand covers
+
+Each project card is a "cover" in its own brand's colors, set by `data-brand` on the card. The palettes are in `styles.css` under **Brand covers**. Recaptr's is real; ChainKeeper, The Back-Up Drive, and Liquid Depths are placeholders. When one of those brands rolls out, change the values in its block (`--b-bg`, `--b-ink`, `--b-accent`, `--b-font`, …) and the card follows.
 
 ## Placeholders
 
