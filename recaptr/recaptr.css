@@ -709,6 +709,11 @@ a.btn-go:hover {
   .flag:nth-of-type(3) em { display: none; }
 }
 
+@media (max-width: 400px) {
+  /* Privacy stays one tap away from the footer and Support page */
+  .nav nav a[href="privacy.html"] { display: none; }
+}
+
 /* -------------------- Accessibility -------------------- */
 
 :focus-visible {
