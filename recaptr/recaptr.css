@@ -588,6 +588,23 @@ a.btn-go:hover {
 
 .tip h3 { margin-bottom: 6px; }
 
+/* Footnotes (Apple-style superscripts) */
+
+.fn { font-size: 0.6em; line-height: 0; vertical-align: super; margin-left: 1px; }
+.fn a { color: inherit; text-decoration: none; opacity: 0.8; }
+.fn a:hover { opacity: 1; text-decoration: underline; }
+
+.footnotes {
+  padding: 24px 0;
+  border-top: 1px solid var(--rc-line);
+  font-size: 0.8rem;
+  color: var(--rc-dim);
+}
+
+.footnotes ol { padding-left: 1.2em; }
+.footnotes li { scroll-margin-top: 80px; }
+.footnotes li:target { color: var(--rc-white); }
+
 /* -------------------- Footer -------------------- */
 
 .foot {
