@@ -4,6 +4,8 @@ The Overton Forge website: plain HTML and CSS, no build step, served by GitHub P
 
 This README is also the hand-off for anyone, human or AI, picking up work on the site. It records what the site is for, how it's built, the design rules, and what's still open. Keep it current when you change any of those.
 
+**Also read `SITE-STANDARDS.md`:** the checklist (disclaimers, footnotes, self-hosted fonts, share images, launch checks) that applies to every Overton Forge site, including FEFW.
+
 ## What the brand stands for
 
 Overton Forge is Brandon Perry's one-person studio. The site should feel like **tech made for creators who take risks**: people who put their opinions out there to be judged (commentators, essayists, reaction channels, people who edit what they record). It is **not** aimed at the IG / TikTok dance-trend creator.
@@ -34,6 +36,10 @@ Recaptr sits inside the Overton Forge brand but has its own look. It's expressly
 - `recaptr/support.html`, `recaptr/privacy.html`: **the App Store Support and Privacy URLs point here.** Don't rename or move them. Change their wording only on purpose.
 - `recaptr/recaptr.css`: Recaptr identity, shared by the landing page (`body.landing`) and the doc pages (`body.doc`)
 - `styles.recaptr-palette.css`: archived cool palette from an earlier version. Reference only, not loaded anywhere.
+- `fonts/`: self-hosted fonts (`fonts.css` plus `.woff2` files, SIL OFL licenses in `LICENSE.txt`). Every page links `fonts/fonts.css`; nothing loads from Google.
+- `og/`: source HTML for the share images. Render each at 1200×630 to `og-image.png` (homepage) and `recaptr/og-image.png`.
+- `SITE-STANDARDS.md`: standard practice for every site (see above).
+- `CLAUDE.md`: short pointer file for Claude sessions.
 - `CNAME`: custom domain for GitHub Pages (`overtonforge.app`)
 
 ## Homepage: brand covers
@@ -53,10 +59,11 @@ To roll out a brand, change only that brand's block in `styles.css` (`--b-bg`, `
 
 - Keep the warm Overton Forge palette and fonts on the studio pages. Products get their own palette on their own cover and pages.
 - No SaaS clichés: no glowing gradient blobs behind headlines, no pill-shaped everything, no stock illustrations. Corners are small (6px on Overton Forge, 12px on Recaptr).
-- **Pricing promise (must stay consistent everywhere):** Recaptr 2 will add paid features. Recaptr 1.x and its source code stay free, forever. This is stated as a byline in the "Free" section of `recaptr/index.html`, and as footnote ¹ (Apple-style superscript linking to a note above the footer) on every "free" claim: the "Free" tag and "$0" on the Recaptr page, and "Coming free" on the homepage Recaptr card. Any new "free" claim gets the same `<sup class="fn">` marker. Don't write anything that implies all future versions are free.
+- **Pricing promise (must stay consistent everywhere):** Recaptr 2 will add paid features as a one-time purchase, not a subscription. Recaptr 1.x and its source code stay free, forever. This is stated as a byline in the "Free" section of `recaptr/index.html`, and as footnote ¹ (Apple-style superscript linking to a note above the footer) on every "free" claim: the "Free" tag and "$0" on the Recaptr page, and "Coming free" on the homepage Recaptr card. Any new "free" claim gets the same `<sup class="fn">` marker. Don't write anything that implies all future versions are free.
 - Copy stays plain and factual. **Never invent product features or claims.** Recaptr copy comes only from what's on its landing, Support, and Privacy pages; ask Brandon before adding anything new.
 - Every page must work at 320px wide with no sideways scrolling, and respect `prefers-reduced-motion` (all animation stops).
-- No analytics, no trackers, no build step. The colophon says so; keep it true.
+- No analytics, no trackers, no third-party requests (fonts are self-hosted), no build step. The colophon says so; keep it true.
+- **Disclaimers in place:** trademark / non-affiliation line in every footer; footnotes ¹ (pricing), ² (4K60 depends on hardware), ³ (Apple Intelligence availability) on the Recaptr page; "tips are gifts" on both tip jars; "What you record" rights note on the Support page. See `SITE-STANDARDS.md` before adding claims.
 
 ## Placeholders to swap
 
@@ -67,7 +74,7 @@ To roll out a brand, change only that brand's block in `styles.css` (`--b-bg`, `
 
 - ChainKeeper: apply the real branding to its cover when Brandon shares it; maybe give it its own page like Recaptr.
 - Recaptr: the copy doesn't yet say anything specific to reaction videos. Add a section only once Brandon confirms which features matter for reactors (e.g. whether camera + game capture together is supported).
-- No `og:image` social preview image yet on either identity.
+- FEFW: apply `SITE-STANDARDS.md` in the `fefw-growth-calc` repo (trademark line, data-accuracy footnote, share image). Checklist is in that doc.
 
 ## History
 
@@ -77,6 +84,7 @@ To roll out a brand, change only that brand's block in `styles.css` (`--b-bg`, `
   - Recaptr given its own gaming / broadcast identity (new `recaptr/recaptr.css`, old `recaptr/page.css` removed). Support and Privacy wording and URLs unchanged.
   - Not live until that branch is merged into `main`.
 - **2026-10-08**: added the pricing byline on the Recaptr page (v2 paid features; 1.x and its source free forever), plus footnote ¹ on every "free" claim on both pages.
+- **2026-10-08**: disclaimers (trademark lines, footnotes ² and ³, tip and recording-rights notes), self-hosted fonts, share images for both identities, and `SITE-STANDARDS.md` as the standard for all sites.
 
 ## Preview locally
 

@@ -766,7 +766,8 @@ a.ledger-row:hover {
 }
 
 .footer-mark {
-  margin: 8px 0 32px;
+  margin: 8px 0 0;
+  padding-bottom: 0.22em; /* room for the g's descender */
   font-family: var(--font-heading);
   font-size: clamp(3rem, 13.5vw, 11rem);
   font-weight: 600;
@@ -824,6 +825,15 @@ a.ledger-row:hover {
   gap: 12px;
   padding-top: 20px;
   border-top: 1px solid var(--color-rule);
+}
+
+/* Trademark / legal line */
+.legal {
+  margin-top: 16px;
+  max-width: 90ch;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--color-text-dim);
 }
 
 /* -------------------- Responsive -------------------- */

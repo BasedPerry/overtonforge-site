@@ -625,6 +625,15 @@ a.btn-go:hover {
 .foot a:hover { color: var(--rc-white); }
 .foot-help a { color: var(--rc-signal); }
 
+.legal {
+  flex-basis: 100%;
+  max-width: 90ch;
+  font: 400 0.72rem/1.6 var(--body);
+  color: var(--rc-dim);
+}
+
+.doc footer .legal { display: block; margin-top: 10px; }
+
 /* -------------------- Doc pages (support, privacy) -------------------- */
 
 .doc main {
