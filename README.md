@@ -53,6 +53,7 @@ To roll out a brand, change only that brand's block in `styles.css` (`--b-bg`, `
 
 - Keep the warm Overton Forge palette and fonts on the studio pages. Products get their own palette on their own cover and pages.
 - No SaaS clichés: no glowing gradient blobs behind headlines, no pill-shaped everything, no stock illustrations. Corners are small (6px on Overton Forge, 12px on Recaptr).
+- **Pricing promise (must stay consistent everywhere):** Recaptr 2 will add paid features. Recaptr 1.x and its source code stay free, forever. This is stated as a byline in the "Free" section of `recaptr/index.html`. Don't write anything that implies all future versions are free.
 - Copy stays plain and factual. **Never invent product features or claims.** Recaptr copy comes only from what's on its landing, Support, and Privacy pages; ask Brandon before adding anything new.
 - Every page must work at 320px wide with no sideways scrolling, and respect `prefers-reduced-motion` (all animation stops).
 - No analytics, no trackers, no build step. The colophon says so; keep it true.
@@ -75,6 +76,7 @@ To roll out a brand, change only that brand's block in `styles.css` (`--b-bg`, `
   - Homepage rebuilt as an editorial small-press layout with per-brand covers.
   - Recaptr given its own gaming / broadcast identity (new `recaptr/recaptr.css`, old `recaptr/page.css` removed). Support and Privacy wording and URLs unchanged.
   - Not live until that branch is merged into `main`.
+- **2026-10-08**: added the pricing byline on the Recaptr page (v2 paid features; 1.x and its source free forever).
 
 ## Preview locally
 
