@@ -1,0 +1,4 @@
+# Local only, never public
+.DS_Store
+CLAUDE.md
+.claude/
