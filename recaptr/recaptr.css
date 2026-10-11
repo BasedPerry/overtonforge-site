@@ -270,9 +270,9 @@ a.btn-go:hover {
 
 .app-live {
   position: relative;
-  aspect-ratio: 2600 / 1437;
+  aspect-ratio: 2600 / 1496;
   background: #000;
-  border-radius: var(--radius);
+  border-radius: 1.62% / 2.82%;
   border: 1px solid var(--rc-line);
   overflow: hidden;
   box-shadow:
@@ -282,10 +282,10 @@ a.btn-go:hover {
 
 .app-live-video {
   position: absolute;
-  left: 1.48%;
-  top: 0.6%;
-  width: 97.03%;
-  height: 98.8%;
+  left: 0.62%;
+  top: 1.71%;
+  width: 98.75%;
+  height: 96.53%;
   object-fit: fill;
 }
 
