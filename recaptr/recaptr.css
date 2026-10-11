@@ -241,6 +241,26 @@ a.btn-go:hover {
   color: var(--rc-dim);
 }
 
+/* -------------------- Hero mark + stage -------------------- */
+
+.hero-mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-mark img {
+  width: min(320px, 70%);
+  height: auto;
+  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 70px rgba(161, 121, 242, 0.35));
+}
+
+.hero-stage { margin-top: clamp(40px, 7vw, 88px); }
+
+@media (max-width: 900px) {
+  .hero-mark { display: none; }
+}
+
 /* -------------------- App screenshot -------------------- */
 /* A real window capture with a cut-out where the picture is; a clip from a
    real take plays underneath it. The video's own letterbox bars sit under the
@@ -250,7 +270,7 @@ a.btn-go:hover {
 
 .app-live {
   position: relative;
-  aspect-ratio: 1800 / 995;
+  aspect-ratio: 2600 / 1437;
   background: #000;
   border-radius: var(--radius);
   border: 1px solid var(--rc-line);
