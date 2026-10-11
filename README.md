@@ -12,7 +12,7 @@ The Overton Forge website: plain HTML and CSS, no build step, served by GitHub P
 
 ## Placeholders
 
-- `KOFI_URL`: tip jar card on the homepage and the Recaptr page. Swap in the Ko-fi link when it exists.
+- `KOFI_URL`: done 2026-10-11. The tip jar card on the homepage and the button on the Recaptr page link to https://ko-fi.com/overtonforge.
 - `APP_STORE_URL`: Recaptr download button. Swap in the App Store link on launch day, and change the card's "Coming Soon" chip.
 
 ## Preview locally
