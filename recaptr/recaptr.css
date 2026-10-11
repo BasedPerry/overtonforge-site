@@ -241,6 +241,55 @@ a.btn-go:hover {
   color: var(--rc-dim);
 }
 
+/* -------------------- App screenshot -------------------- */
+/* A real window capture with a cut-out where the picture is; a clip from a
+   real take plays underneath it. The video's own letterbox bars sit under the
+   frame's bars, so only the picture area shows through. */
+
+.app-shot { margin: 0; }
+
+.app-live {
+  position: relative;
+  aspect-ratio: 1800 / 995;
+  background: #000;
+  border-radius: var(--radius);
+  border: 1px solid var(--rc-line);
+  overflow: hidden;
+  box-shadow:
+    0 40px 100px -30px rgba(0, 0, 0, 0.9),
+    0 0 80px -30px rgba(161, 121, 242, 0.45);
+}
+
+.app-live-video {
+  position: absolute;
+  left: 1.48%;
+  top: 0.6%;
+  width: 97.03%;
+  height: 98.8%;
+  object-fit: fill;
+}
+
+.app-live-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.app-shot figcaption {
+  margin-top: 12px;
+  font-size: 0.72rem;
+  color: var(--rc-dim);
+  text-align: right;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-live-video { display: none; }
+  .app-live { background: url("img/recaptr-recording.jpg") center / cover no-repeat; }
+  .app-live-frame { visibility: hidden; }
+}
+
 /* -------------------- App mock -------------------- */
 
 .app {

@@ -52,30 +52,16 @@
         <p class="req">Requires macOS 27 on a Mac with Apple silicon.</p>
       </div>
 
-      <!-- App window mock (decorative) -->
-      <div class="app" aria-hidden="true">
-        <div class="app-bar"><i></i><i></i><i></i><span>Recaptr</span></div>
-        <div class="app-screen">
-          <span class="hud hud-tl"></span><span class="hud hud-tr"></span><span class="hud hud-bl"></span><span class="hud hud-br"></span>
-          <div class="screen-top">
-            <span class="rec"><b></b>REC</span>
-            <span class="tc">01:24:37:08</span>
-          </div>
-          <div class="screen-bottom">
-            <span class="chip">Capture card</span><span class="chip">4K60</span><span class="chip">HEVC</span>
-          </div>
-          <div class="meters"><i></i><i></i></div>
+      <!-- Real app window: a capture of Recaptr 1.0 with a clip from a real take playing in the preview area -->
+      <figure class="app-shot">
+        <div class="app-live">
+          <video class="app-live-video" autoplay muted loop playsinline preload="metadata" poster="img/recaptr-recording.jpg" aria-hidden="true" tabindex="-1">
+            <source src="img/recaptr-clip.mp4" type="video/mp4">
+          </video>
+          <img class="app-live-frame" src="img/recaptr-window.png" width="1800" height="995" alt="The Recaptr window while recording from a capture card: source picker at the top, record button and marker button at the bottom, audio meters on the right, and the recording timer in the corner.">
         </div>
-        <div class="app-track">
-          <div class="track-line">
-            <span class="flag" style="left:14%"><em>clutch</em></span>
-            <span class="flag f2" style="left:38%"><em>boss down</em></span>
-            <span class="flag" style="left:61%"><em>rage quit</em></span>
-            <span class="flag f2" style="left:79%"><em>my reaction</em></span>
-            <span class="playhead"></span>
-          </div>
-        </div>
-      </div>
+        <figcaption>Recaptr 1.0 recording from a capture card. Footage: <cite>Charge</cite>, © Blender Foundation, CC BY.</figcaption>
+      </figure>
     </div>
   </section>
 
