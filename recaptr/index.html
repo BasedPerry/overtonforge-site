@@ -3,42 +3,181 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#121518">
+<meta name="color-scheme" content="dark">
 <title>Recaptr</title>
 <meta name="description" content="Recaptr is a free Mac capture app for people who actually edit what they record. Markers land in Final Cut, ready to cut.">
-<link rel="stylesheet" href="page.css">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Recaptr">
+<meta property="og:description" content="Footy or it didn't happen. A free Mac capture app with markers that land in Final Cut.">
+<meta property="og:url" content="https://overtonforge.app/recaptr/">
+<meta property="og:image" content="https://overtonforge.app/recaptr/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Recaptr: Footy or it didn't happen.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Recaptr">
+<meta name="twitter:description" content="Footy or it didn't happen. A free Mac capture app with markers that land in Final Cut.">
+<meta name="twitter:image" content="https://overtonforge.app/recaptr/og-image.png">
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="recaptr.css">
 </head>
-<body>
+<body class="landing">
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="./"><span class="logo-dot" aria-hidden="true"></span>Recaptr</a>
+    <nav aria-label="Recaptr">
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-<p class="tag">Recaptr · Overton Forge</p>
-<h1>Recaptr</h1>
-<p class="lede">Footy or it didn't happen.</p>
-<p>A capture app for people who actually edit what they record. Plug in a capture card, pick a screen or a window, and hit <kbd>⌘R</kbd>. Drop markers from anywhere with <kbd>⌃⌥⌘B</kbd>, even mid-game. When you stop, Recaptr writes a Final Cut file next to the recording, so your clip opens with every marker already in place.</p>
 
-<div class="actions">
-<!-- APP_STORE_URL: swap this span for <a class="button" href="APP_STORE_URL">Download on the Mac App Store</a> on launch day -->
-<span class="button disabled" aria-disabled="true">Coming soon to the Mac App Store</span>
-<a class="button secondary" href="https://github.com/BasedPerry/Recaptr">Source code (MIT)</a>
-</div>
+  <!-- ======================== HERO ======================== -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="kicker"><span>Free<sup class="fn"><a href="#fn-1" aria-label="Footnote 1">1</a></sup></span><span>Mac App Store</span><span>Open source</span></p>
+        <h1>Footy or it didn't happen.</h1>
+        <p class="hero-sub">A capture app for people who actually edit what they record. Plug in a capture card, pick a screen or a window, and hit <kbd>⌘R</kbd>. Drop markers from anywhere with <kbd>⌃⌥⌘B</kbd>, even mid-game. When you stop, Recaptr writes a Final Cut file next to the recording, so your clip opens with every marker already in place.</p>
+        <div class="actions">
+          <!-- APP_STORE_URL: swap this span for <a class="btn btn-go" href="APP_STORE_URL">Download on the Mac App Store</a> on launch day -->
+          <span class="btn btn-go is-disabled" aria-disabled="true">Coming soon to the Mac App Store</span>
+          <a class="btn btn-line" href="https://github.com/BasedPerry/Recaptr">Source code (MIT)</a>
+        </div>
+        <p class="req">Requires macOS 27 on a Mac with Apple silicon.</p>
+      </div>
 
-<h2>Free, and the 1.0 code is yours</h2>
-<p>Recaptr is free. The 1.0 source is public under the MIT license: read it, fork it, build on it. No account, no subscription, no tracking.</p>
+      <!-- Logo mark: the app icon -->
+      <div class="hero-mark">
+        <img src="img/recaptr-icon.png" width="640" height="640" alt="Recaptr app icon">
+      </div>
+    </div>
 
-<h2>Tip jar</h2>
-<p>If Recaptr saves you an edit or two and you want to say thanks, you can leave a tip. It's never required.</p>
-<p><a class="button" href="https://ko-fi.com/overtonforge" target="_blank" rel="noopener noreferrer">Buy me a coffee on Ko-fi</a></p>
+    <div class="wrap hero-stage">
+      <!-- Real app window: a capture of Recaptr 1.0 with a clip from a real take playing in the preview area -->
+      <figure class="app-shot">
+        <div class="app-live">
+          <video class="app-live-video" autoplay muted loop playsinline preload="metadata" poster="img/recaptr-recording.jpg" aria-hidden="true" tabindex="-1">
+            <source src="img/recaptr-clip.mp4" type="video/mp4">
+          </video>
+          <img class="app-live-frame" src="img/recaptr-window.png" width="2600" height="1496" alt="The Recaptr window while recording from a capture card: source picker at the top, record button and marker button at the bottom, audio meters on the right, and the recording timer in the corner.">
+        </div>
+        <figcaption>Recaptr 1.0 recording from a capture card. Footage: <cite>Charge</cite>, © Blender Foundation, CC BY.</figcaption>
+      </figure>
+    </div>
+  </section>
 
-<h2>What it does</h2>
-<div class="card">
-<p><strong>Capture.</strong> Capture cards, cameras, displays, and single windows. Up to 4K at 60 fps, HEVC or H.264.</p>
-<p><strong>Mark.</strong> Markers go into a Final Cut file next to the recording. With Apple Intelligence on, Recaptr names markers and episodes for you, on your Mac.</p>
-<p><strong>File.</strong> Set a series and each take saves as the next episode in its own folder.</p>
-<p><strong>Survive long sessions.</strong> Crash-safe files, separate game and mic tracks, audio that stays in sync over hours, and Instant Replay with <kbd>⇧⌘R</kbd>.</p>
-</div>
+  <!-- ======================== HOW ======================== -->
+  <section id="how" class="band">
+    <div class="wrap">
+      <p class="label">// How it works</p>
+      <h2>Record. Mark. Cut.</h2>
+      <ol class="steps">
+        <li>
+          <span class="step-no">01</span>
+          <h3>Record</h3>
+          <p>Capture cards, cameras, displays, and single windows. Up to 4K at 60 fps<sup class="fn"><a href="#fn-2" aria-label="Footnote 2">2</a></sup>, HEVC or H.264.</p>
+          <p class="keys"><kbd>⌘R</kbd></p>
+        </li>
+        <li>
+          <span class="step-no">02</span>
+          <h3>Mark</h3>
+          <p>Hit a key when something happens. It works from any app, so you never leave the game.</p>
+          <p class="keys"><kbd>⌘B</kbd> <kbd>⌃⌥⌘B</kbd></p>
+        </li>
+        <li>
+          <span class="step-no">03</span>
+          <h3>Cut</h3>
+          <p>Every take with markers gets a matching <code>.fcpxml</code>. Double-click it and Final Cut opens the clip with markers in place.</p>
+          <p class="keys"><span class="file">Series – Ep 4.fcpxml</span></p>
+        </li>
+      </ol>
+    </div>
+  </section>
 
-<h2>Help</h2>
-<p><a href="support.html">Support</a> · <a href="privacy.html">Privacy policy</a> · <a href="mailto:support@overtonforge.app">support@overtonforge.app</a></p>
+  <!-- ======================== FEATURES ======================== -->
+  <section id="features" class="band">
+    <div class="wrap">
+      <p class="label">// What it does</p>
+      <h2>Built for the long session.</h2>
+      <div class="tiles">
+        <article class="tile">
+          <h3>Instant Replay</h3>
+          <p>Missed it? Save the last 15 seconds of a screen or window with <kbd>⇧⌘R</kbd>.</p>
+        </article>
+        <article class="tile">
+          <h3>Separate tracks</h3>
+          <p>Game and mic land on their own tracks, and audio stays in sync over hours.</p>
+        </article>
+        <article class="tile">
+          <h3>Crash-safe files</h3>
+          <p>If anything quits mid-take, the .mov opens in QuickTime with everything up to a few seconds before.</p>
+        </article>
+        <article class="tile">
+          <h3>Series and episodes</h3>
+          <p>Set a series and each take saves as the next episode in its own folder.</p>
+        </article>
+        <article class="tile">
+          <h3>Names itself</h3>
+          <p>With Apple Intelligence on, Recaptr names markers and episodes for you, on your Mac.<sup class="fn"><a href="#fn-3" aria-label="Footnote 3">3</a></sup></p>
+        </article>
+        <article class="tile">
+          <h3>Monitor on the fly</h3>
+          <p>Hear what you're recording, and flip monitoring off with <kbd>⌘K</kbd>.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-<footer>© 2026 <a href="../">Overton Forge</a> · Requires macOS 27 on a Mac with Apple silicon.</footer>
+  <!-- ======================== FREE ======================== -->
+  <section class="band">
+    <div class="wrap">
+      <div class="free">
+        <div>
+          <p class="label">// Free, and the 1.0 code is yours</p>
+          <h2>No account. No subscription. No tracking.</h2>
+          <p>Recaptr is free. The 1.0 source is public under the MIT license: read it, fork it, build on it.</p>
+          <p class="byline"><span>Heads up</span> Recaptr 2 will add paid features as a one-time purchase, not a subscription. Recaptr 1.x and its source code stay free, forever.</p>
+        </div>
+        <dl class="stats">
+          <div><dt>Price</dt><dd>$0<sup class="fn"><a href="#fn-1" aria-label="Footnote 1">1</a></sup></dd></div>
+          <div><dt>License</dt><dd>MIT</dd></div>
+          <div><dt>Trackers</dt><dd>0</dd></div>
+        </dl>
+      </div>
+
+      <div class="tip">
+        <h3>Tip jar</h3>
+        <p>If Recaptr saves you an edit or two and you want to say thanks, you can leave a tip. It's never required, and tips are gifts: they don't unlock anything.</p>
+        <a class="btn btn-line" href="https://ko-fi.com/overtonforge" target="_blank" rel="noopener noreferrer">Buy me a coffee on Ko-fi</a>
+      </div>
+    </div>
+  </section>
+
 </main>
+
+<aside class="footnotes" aria-label="Footnotes">
+  <div class="wrap">
+    <ol>
+      <li id="fn-1">Recaptr 2 will add paid features as a one-time purchase, not a subscription. Recaptr 1.x and its source code stay free, forever.</li>
+      <li id="fn-2">Maximum resolution and frame rate depend on your source, capture hardware, and Mac.</li>
+      <li id="fn-3">Requires Apple Intelligence, which is available on supported Macs in supported languages and regions.</li>
+    </ol>
+  </div>
+</aside>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <p class="foot-help"><a href="support.html">Support</a> · <a href="privacy.html">Privacy policy</a> · <a href="mailto:support@overtonforge.app">support@overtonforge.app</a></p>
+    <p class="foot-by">© 2026 <a href="../">Overton Forge</a> · Requires macOS 27 on a Mac with Apple silicon.</p>
+    <p class="legal">Apple, Mac, macOS, Final Cut Pro, QuickTime, App Store, and Apple Intelligence are trademarks of Apple Inc., registered in the U.S. and other countries. Recaptr and Overton Forge are not affiliated with or endorsed by Apple. Other names belong to their owners.</p>
+  </div>
+</footer>
+
 </body>
 </html>
