@@ -105,21 +105,46 @@ kbd {
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font: 700 1.15rem/1 var(--head);
-  letter-spacing: -0.03em;
+  font-size: 1.2rem;
+  line-height: 1;
   color: var(--rc-white);
   text-decoration: none;
 }
 
-.logo-dot {
-  width: 11px;
-  height: 11px;
+/* Wordmark: lowercase re:captr in Unbounded. The colon's top dot is the REC light. */
+.rc-wordmark {
+  font-family: "Unbounded", var(--head);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+}
+
+.rc-colon {
+  display: inline-block;
+  position: relative;
+  width: 0.185em;
+  height: 0.56em;
+  margin: 0 0.07em 0 0.08em;
+  vertical-align: baseline;
+}
+
+.rc-colon i {
+  position: absolute;
+  left: 0;
+  width: 0.185em;
+  height: 0.185em;
   border-radius: 50%;
-  background: var(--rc-rec);
-  box-shadow: 0 0 12px var(--rc-rec);
+  background: currentColor;
+}
+
+.rc-colon i:first-child {
+  top: 0;
+  background: #FF5F57;
+  box-shadow: 0 0 0.6em #FF5F57;
   animation: blink 1.6s ease-in-out infinite;
 }
+
+.rc-colon i:last-child { bottom: 0; }
 
 .nav nav { display: flex; gap: 22px; }
 

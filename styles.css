@@ -555,6 +555,48 @@ em {
   --b-name-tracking: -0.035em;
 }
 
+/* Wordmark: lowercase re:captr in Unbounded. The colon's top dot is the REC light. */
+.rc-wordmark {
+  font-family: "Unbounded", "Space Grotesk", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+}
+
+.rc-colon {
+  display: inline-block;
+  position: relative;
+  width: 0.185em;
+  height: 0.56em;
+  margin: 0 0.07em 0 0.08em;
+  vertical-align: baseline;
+}
+
+.rc-colon i {
+  position: absolute;
+  left: 0;
+  width: 0.185em;
+  height: 0.185em;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.rc-colon i:first-child {
+  top: 0;
+  background: #FF5F57;
+  box-shadow: 0 0 0.6em #FF5F57;
+  animation: rc-blink 1.6s ease-in-out infinite;
+}
+
+.rc-colon i:last-child { bottom: 0; }
+
+@keyframes rc-blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.35; }
+}
+
+.cover[data-brand="recaptr"] .cover-name { font-size: clamp(1.9rem, 4.4vw, 3.1rem); }
+
 /* ChainKeeper — PLACEHOLDER: archive navy and brass, like a case file */
 .cover[data-brand="chainkeeper"] {
   --b-bg: #121A26;

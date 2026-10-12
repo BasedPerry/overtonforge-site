@@ -22,7 +22,7 @@ The name is part of the idea: the Overton window is the range of opinions people
 | Pages | `index.html` | `recaptr/` |
 | Stylesheet | `styles.css` | `recaptr/recaptr.css` |
 | Colors | Coal, ember red, amber, cream (from the logo) | Graphite, signal green, violet, restore blue (mirrors Recaptr's `Brand.swift`) |
-| Type | Fraunces (headings), Inter (body), IBM Plex Mono (labels) | Space Grotesk (headings), Inter (body), Space Mono (labels) |
+| Type | Fraunces (headings), Inter (body), IBM Plex Mono (labels) | Space Grotesk (headings), Inter (body), Space Mono (labels). Wordmark: lowercase `re:captr` in Unbounded Bold, the colon's top dot is the red REC light (`.rc-wordmark` in `recaptr/recaptr.css` and `styles.css`). Running text still says "Recaptr" |
 | Mode | Dark only | Dark only |
 | Signature cues | Crop-mark frame, numbered sections ("01 — The work"), hairline rules, facts row under the hero, contact as a ruled list, outlined wordmark and colophon in the footer, faint paper grain | REC light, timecode, HUD corner brackets, audio meters, marker flags on a timeline with a moving playhead, chunky keycaps for shortcuts |
 
