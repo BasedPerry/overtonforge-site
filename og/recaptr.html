@@ -1,31 +1,21 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><title>Recaptr share image</title>
-<link rel="stylesheet" href="../fonts/fonts.css">
-<style>
-  html,body{margin:0}
-  body{width:1200px;height:630px;position:relative;overflow:hidden;font-family:"Inter",sans-serif;color:#F4F0E8;
-    background:radial-gradient(ellipse 45% 60% at 85% 20%,rgba(161,121,242,.35),transparent 70%),radial-gradient(ellipse 40% 50% at 10% 0%,rgba(94,178,214,.25),transparent 70%),#121518}
-  body::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0 1px,transparent 1px 3px)}
-  .h{position:absolute;width:30px;height:30px;border:0 solid rgba(244,240,232,.8)}
-  .tl{top:40px;left:40px;border-top-width:3px;border-left-width:3px}.tr{top:40px;right:40px;border-top-width:3px;border-right-width:3px}
-  .bl{bottom:40px;left:40px;border-bottom-width:3px;border-left-width:3px}.br{bottom:40px;right:40px;border-bottom-width:3px;border-right-width:3px}
-  .top{position:absolute;top:76px;left:84px;right:84px;display:flex;justify-content:space-between;align-items:center;font:700 22px/1 "Space Mono",monospace;letter-spacing:.06em}
-  .rec{display:flex;align-items:center;gap:12px}.rec b{width:16px;height:16px;border-radius:50%;background:#FF5F57;box-shadow:0 0 18px #FF5F57}
-  .tc{padding:6px 12px;border-radius:6px;background:rgba(0,0,0,.45);font-weight:400}
-  h1{position:absolute;left:80px;top:150px;margin:0;font:700 168px/1 "Space Grotesk",sans-serif;letter-spacing:-.05em}
-  p{position:absolute;left:84px;top:342px;margin:0;font:500 44px/1.1 "Space Grotesk",sans-serif;letter-spacing:-.02em;color:#CFCAC2}
-  .track{position:absolute;left:84px;right:84px;bottom:92px;height:34px;border-radius:6px;border:1px solid rgba(94,178,214,.45);
-    background:repeating-linear-gradient(90deg,rgba(94,178,214,.4) 0 3px,transparent 3px 9px) center/100% 55% no-repeat,rgba(94,178,214,.12)}
-  .f{position:absolute;top:-34px;bottom:-3px;width:3px;background:#8DFCB7}
-  .f::before{content:"";position:absolute;top:0;left:0;width:14px;height:11px;background:inherit;clip-path:polygon(0 0,100% 50%,0 100%)}
-  .f.v{background:#A179F2}
-  .ph{position:absolute;top:-8px;bottom:-8px;left:58%;width:3px;background:#FF5F57;box-shadow:0 0 10px #FF5F57}
-  .free{position:absolute;right:84px;top:350px;padding:10px 18px;border:2px solid rgba(141,252,183,.6);border-radius:999px;font:700 20px/1 "Space Mono",monospace;letter-spacing:.06em;color:#8DFCB7}
-</style></head><body>
-<i class="h tl"></i><i class="h tr"></i><i class="h bl"></i><i class="h br"></i>
-<div class="top"><span class="rec"><b></b>REC</span><span class="tc">01:24:37:08</span></div>
-<h1>Recaptr</h1>
-<p>Footy or it didn't happen.</p>
-<span class="free">FREE FOR MAC</span>
-<div class="track"><i class="f" style="left:12%"></i><i class="f v" style="left:30%"></i><i class="f" style="left:47%"></i><i class="f v" style="left:71%"></i><i class="f" style="left:88%"></i><i class="ph"></i></div>
-</body></html>
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Recaptr share image</title><link rel="stylesheet" href="../fonts/fonts.css"><style>
+html,body{margin:0}
+body{width:1200px;height:630px;position:relative;overflow:hidden;color:#F4F0E8;background:#121518;font-family:"Space Grotesk",sans-serif}
+.scan{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0 1px,transparent 1px 3px);z-index:0}
+.wm{position:absolute;margin:0;font:700 100px/1 "Unbounded",sans-serif;letter-spacing:-.04em;white-space:nowrap;--xh:.56em;--d:.185em;z-index:3}
+.col{display:inline-block;position:relative;width:var(--d);height:var(--xh);vertical-align:baseline;margin:0 .07em 0 .08em}
+.col i{position:absolute;left:0;width:var(--d);height:var(--d);border-radius:50%;background:#F4F0E8;z-index:2}
+.col i:first-child{top:0;background:#FF5F57;box-shadow:0 0 .14em #FF5F57}.col i:last-child{bottom:0}
+.tag{position:absolute;margin:0;font:500 38px/1.1 "Space Grotesk",sans-serif;letter-spacing:-.02em;color:#CFCAC2;z-index:3}
+.free{position:absolute;padding:10px 18px;border:2px solid rgba(141,252,183,.6);border-radius:999px;font:700 19px/1 "Space Mono",monospace;letter-spacing:.06em;color:#8DFCB7;z-index:3}
+.glow{position:absolute;border-radius:50%;filter:blur(70px);background:linear-gradient(135deg,#5EB2D6 0%,#A179F2 50%,#8DFCB7 100%)}
+
+.glow{left:720px;top:10px;width:620px;height:610px;opacity:.55}
+.ic{position:absolute;left:690px;top:-25px;width:680px;height:680px;z-index:2}
+.wm{left:80px;top:170px;font-size:112px}
+.tag{left:84px;top:310px}
+.by{position:absolute;left:84px;top:378px;width:560px;margin:0;font:400 25px/1.4 "Inter",sans-serif;color:#8F969D;z-index:3}
+.by b{font-weight:500;color:#CFCAC2}
+.free{left:84px;top:478px}
+
+</style></head><body><i class="glow"></i><img class="ic" src="../recaptr/img/recaptr-mark.svg"><h1 class="wm">re<span class="col"><i></i><i></i></span>captr</h1><p class="by"><b>Video capture for creators.</b> Mark the moment while you record, and find it waiting in the edit.</p><p class="tag">Footy or it didn't happen.</p><span class="free">FREE FOR MAC</span><i class="scan"></i></body></html>
