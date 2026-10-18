@@ -522,12 +522,19 @@ em {
 
 .status-active { color: var(--of-ember-glow); }
 .status-soon   { color: var(--b-accent); }
+.status-live   { color: var(--b-accent); }
 
 .status-active::before,
 .status-soon::before {
   background: currentColor;
   box-shadow: 0 0 10px currentColor;
   animation: pulse 2.4s ease-in-out infinite;
+}
+
+/* Shipped: steady dot, no pulse */
+.status-live::before {
+  background: currentColor;
+  box-shadow: 0 0 10px currentColor;
 }
 
 @keyframes pulse {

@@ -68,7 +68,7 @@ To roll out a brand, change only that brand's block in `styles.css` (`--b-bg`, `
 ## Placeholders to swap
 
 - `KOFI_URL`: done 2026-10-11. Both tip jars link to https://ko-fi.com/overtonforge.
-- `APP_STORE_URL`: Recaptr download button. On launch day, swap in the App Store link, and change the "Coming soon" status on the homepage cover.
+- `APP_STORE_URL`: done 2026-10-18. The Recaptr download button and the homepage cover link to https://apps.apple.com/app/id6817601217; the cover status reads "Out now".
 
 ## Open items
 
