@@ -601,6 +601,33 @@ a.btn-go:hover { background: #B4FDD0; }
   }
 }
 
+/* The looping demo over the steps. Its space is held before the script mounts it */
+.how-demo {
+  margin: clamp(28px, 4vw, 48px) auto clamp(40px, 5vw, 64px);
+  max-width: 880px;
+}
+
+.how-demo-stage {
+  aspect-ratio: 880 / 560;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+/* Lined up with the window inside the stage, not the stage's 40/880 gutter */
+.how-demo figcaption {
+  margin-top: calc(12px - 4.55%);
+  padding: 0 4.55%;
+  font-size: 0.72rem;
+  color: var(--rc-dim);
+  text-align: right;
+}
+
+/* Phones keep the step list; the script never mounts the demo there.
+   The same query as the script's, negated, so no width shows an empty box */
+@media not (min-width: 700px) {
+  .how-demo { display: none; }
+}
+
 /* Under 900px the track turns vertical: steps hang off a line down the left */
 @media (max-width: 900px) {
   .track { display: none; }

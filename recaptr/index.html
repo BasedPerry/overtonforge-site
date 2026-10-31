@@ -23,6 +23,8 @@
 <link rel="icon" href="img/recaptr-icon.png" type="image/png">
 <link rel="apple-touch-icon" href="img/recaptr-icon.png">
 <link rel="stylesheet" href="recaptr.css">
+<link rel="stylesheet" href="demo/recaptr-demo.css">
+<script src="demo/recaptr-demo.js" defer></script>
 </head>
 <body class="landing">
 
@@ -74,6 +76,11 @@
   <section id="how" class="band">
     <div class="wrap">
       <h2>Record. Mark. Cut.</h2>
+      <!-- A looping demo of one take, drawn from the app's own UI. Wide screens only; phones keep the steps below -->
+      <figure class="how-demo">
+        <div id="recaptr-demo" class="how-demo-stage" role="img" aria-label="Recaptr recording a take: record starts the clock, two markers are dropped with Control-Option-Command-B, and on stop a card shows both markers and Open in Final Cut."></div>
+        <figcaption>Recaptr 1.1 beta. Marker names by Apple Intelligence.<sup class="fn"><a href="#fn-3" aria-label="Footnote 3">3</a></sup> Footage: <cite>Charge</cite>, © Blender Foundation, CC BY.</figcaption>
+      </figure>
       <!-- One recording track: each step hangs off a marker flag, and a playhead runs the length of it -->
       <div class="track" aria-hidden="true"><span class="playhead"></span></div>
       <ol class="steps">
